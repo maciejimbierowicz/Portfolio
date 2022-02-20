@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Chivo:wght@900&family=Orbitron:wght@500;700&family=Permanent+Marker&family=Russo+One&family=Spartan:wght@700;800;900&display=swap");
+
+
 body {
+  
+  background: #85FFC7;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +15,185 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* NAVBAR SECTION */
+
+nav {
+  background-color: white;
+  padding: 1% 4%;
+  display: flex; /* 1 */
+  justify-content: space-between; /* 2 */
+}
+
+nav ul {
+  display: flex; /* 5 */
+  list-style: none; /* 6 */
+}
+
+nav li {
+  padding-left: 1rem; /* 7! */
+}
+
+.logo {
+  position: absolute;
+  top: 1%;
+  left: 3%;
+  height: 50px;
+}
+
+
+/* TITLE SECTION */
+
+.cv-button {
+  font-size: 1.5rem;
+  font-family: 'Russo One', sans-serif;
+  font-weight: bolder;
+  margin: 2% 3% 2% 0;
+}
+
+.cv-button:hover {
+  background-color: grey;
+}
+
+.title {
+  position: static;
+  padding: 6% 15%;
+  /* text-align: center; */
+  
+}
+
+.title h1 {
+
+  font-size: 5rem;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 900;
+  color: black
+}
+
+.title p {
+  font-size: 1.6rem;
+  font-family: 'Russo One', sans-serif;
+  color: #333300
+}
+
+
+/*POPUP SECTION */
+
+.info {
+  font-family: 'Spartan';
+  font-weight: bold;
+  text-align: center justify;
+  color: black;
+  padding: 5% 15%;
+}
+
+.info h1 {
+  font-size: 3rem;
+}
+
+.inner-page {
+  width: 90%;
+  height: 80%;
+  background: url(../public/bg2.jpg);
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+.popup {
+  background: url(../public/popup-bg2.jpg) center center fixed;
+  text-align: center;
+  background-color: #BFD3C1;
+  height: 500px;
+  width: 800px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.right-arrow {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 45%;
+  left: 10px;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ABOUT ME */
+
+#about-me {
+  margin-top: 40px;
+  text-align: justify;
+}
+
+/* PROJECTS */
+
+.project-image {
+  margin: 1% auto;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  border: solid;
+}
+
+/* CONTACTS */
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 7px
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+ .title {
+   padding: 15% 15%;
+   text-align: center;
+ }
+
+ .title h1 {
+   font-size: 3rem;
+ }
+
+ .info h1 {
+   font-size: 2rem;
+ }
+
+ .info p {
+   font-size: 0.8rem;
+ }
+
+ .popup {
+   width: 450px;
+   height: 400px
+ }
 }
